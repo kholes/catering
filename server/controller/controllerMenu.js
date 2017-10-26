@@ -104,7 +104,6 @@ function UpdateMenu(req,res){
     })
   }
 
-
   module.exports ={
     getAllMenu,
     getOneMenu,
