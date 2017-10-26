@@ -17,13 +17,12 @@ const penggunaSchema = new mongoose.Schema({
     peran: {
         type: String,
         required: true
-    }
-
+    },
     // optional, untuk key masing2 peran
-    // key: {
-    //     type: String,
-    //     required: true
-    // }
+    key: {
+        type: String,
+        required: true
+    }
 });
 
 const Pengguna = mongoose.model('Pengguna, penggunaSchema')
