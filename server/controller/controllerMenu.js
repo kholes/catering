@@ -1,6 +1,8 @@
 const Menu = require ('../models/menu.js');
 
 function getAllMenu(req,res){
+  console.log("Server on")
+  
     Menu.find({})
     .then(result =>{
         res.send(result)
