@@ -9,8 +9,12 @@ var transaksiSchema = new mongoose.Schema({
     },
     listMenu : {
       type : [{
-          idMenu:{type:Schema.Types.ObjectId, ref: 'Menu'},
-          quantity: {type: Number, required:true}
+          idMenu:{
+            type:Schema.Types.ObjectId, ref: 'Menu'
+          },
+          quantity: {
+            type: Number, required:true
+          }
       }],
       required :true
     },
